@@ -1,5 +1,5 @@
 # Product with lowest price finder
-
+How to run: open project in vs code andLocate index.html  and right click and click on open with live server(Install live server if not installed)
 ## Description
 The **Product Price Finder** is a simple web application that allows users to input products with their respective prices. After entering a list of products, the user can click on the **Find Lowest Price** button to display only the products with the lowest price.
 
