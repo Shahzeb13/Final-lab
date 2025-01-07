@@ -1,0 +1,116 @@
+1. Initialize a Git repository
+bash
+Copy code
+git init
+Initializes a new Git repository in your project directory.
+2. Add files to the staging area
+bash
+Copy code
+git add .
+Stages all modified or new files in the current directory and subdirectories.
+Alternatively, you can stage specific files like git add filename.
+3. Commit the changes
+bash
+Copy code
+git commit -m "Your commit message"
+Commits the staged files with a commit message describing your changes.
+4. Check the status of your repository
+bash
+Copy code
+git status
+Displays the status of the repository, showing which files are staged, unstaged, or untracked.
+5. View commit history
+bash
+Copy code
+git log
+Shows the commit history of your project.
+6. Create a remote repository on GitHub
+Go to GitHub and create a new repository.
+Don't initialize the repository with a README or .gitignore file if you're pushing an existing project.
+7. Add a remote repository
+bash
+Copy code
+git remote add origin https://github.com/YOUR_USERNAME/REPOSITORY_NAME.git
+Links your local repository to the remote GitHub repository.
+8. Push changes to GitHub
+bash
+Copy code
+git push -u origin master
+Pushes the local commits to the remote GitHub repository.
+The -u flag sets the upstream tracking reference.
+9. Push changes after the first push
+bash
+Copy code
+git push origin master
+For subsequent pushes, use this command without the -u flag.
+10. Pull changes from GitHub (if you have made changes on GitHub or others have)
+bash
+Copy code
+git pull origin master
+Fetches and merges changes from the remote repository into your local repository.
+11. Check the remote URL
+bash
+Copy code
+git remote -v
+Displays the remote URLs associated with the repository.
+12. View file differences
+bash
+Copy code
+git diff
+Shows the differences between the staged and unstaged changes.
+13. Remove files from staging area (but keep locally)
+bash
+Copy code
+git reset HEAD filename
+Removes a file from the staging area but keeps the changes locally.
+14. Delete a branch (locally)
+bash
+Copy code
+git branch -d branch_name
+Deletes a branch from your local repository.
+15. Create a new branch
+bash
+Copy code
+git branch branch_name
+Creates a new branch.
+16. Switch to a branch
+bash
+Copy code
+git checkout branch_name
+Switches to the specified branch.
+17. Combine changes from one branch to another (merge)
+bash
+Copy code
+git merge branch_name
+Merges the specified branch into the currently checked-out branch.
+Short Workflow Example:
+Initialize repository:
+
+bash
+Copy code
+git init
+Stage changes:
+
+bash
+Copy code
+git add .
+Commit changes:
+
+bash
+Copy code
+git commit -m "Initial commit"
+Add remote repository:
+
+bash
+Copy code
+git remote add origin https://github.com/YOUR_USERNAME/REPOSITORY_NAME.git
+Push to GitHub:
+
+bash
+Copy code
+git push -u origin master
+For subsequent pushes:
+
+bash
+Copy code
+git push origin master
